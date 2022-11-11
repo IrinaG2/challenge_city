@@ -1,10 +1,58 @@
-.container {
-  font-family: "Raleway", sans-serif;
+:root {
+  --primary-color: #1a2639;
+  --secondary-color: #d9dad7;
+  --third-color: #3e4a61;
+
+  --primary-font-family: "Raleway", sans-serif;
+  --secondary-font-family: "Island Moments", cursive;
 }
+.container {
+  font-family: var(--primary-font-family);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+}
+
 h1 {
-  font-family: "Island Moments", cursive;
+  font-family: var(--secondary-font-family);
   font-size: 120px;
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--third-color);
+  border-radius: 10px;
+}
+
+.hero {
+  background-color: var(--third-color);
+  border-radius: 10px;
+  padding: 50px;
 }
 .btn-customised {
-  border: 1px solid black;
+  margin: 50px;
+  padding: 5px 30px;
+
+  font-family: var(--secondary-font-family);
+  font-size: 30px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--third-color);
+}
+.btn-customised:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.icon {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+.icon:hover {
+  color: var(--third-color);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px;
 }
