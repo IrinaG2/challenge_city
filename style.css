@@ -1,33 +1,63 @@
 :root {
   --primary-color: #1a2639;
   --secondary-color: #d9dad7;
-  --third-color: #3e4a61;
+  --third-color: #a2a5a5;
 
   --primary-font-family: "Raleway", sans-serif;
   --secondary-font-family: "Island Moments", cursive;
 }
+
+nav {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+nav li.active a {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: var(--secondary-font-family);
+  font-size: 120px;
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
 .container {
+  padding: 0;
+  max-width: 100%;
   font-family: var(--primary-font-family);
   background-color: var(--secondary-color);
   color: var(--primary-color);
   text-align: center;
 }
 
-h1 {
-  font-family: var(--secondary-font-family);
-  font-size: 120px;
-  color: var(--secondary-color);
-}
-
-footer {
-  background-color: var(--third-color);
-  border-radius: 10px;
-}
-
 .hero {
   background-color: var(--third-color);
-  border-radius: 10px;
-  padding: 50px;
+  border-radius: 5px;
+  padding: 20px;
 }
 .btn-customised {
   margin: 50px;
@@ -51,7 +81,7 @@ footer {
   padding: 10px;
 }
 .icon:hover {
-  color: var(--third-color);
+  color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 50%;
   padding: 10px;
