@@ -55,6 +55,9 @@ footer {
 }
 
 .hero {
+  background-image: url(/images/background.jpg);
+  background-size: 100%;
+  background-position-y: -50px;
   background-color: var(--third-color);
   border-radius: 5px;
   padding: 20px;
