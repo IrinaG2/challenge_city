@@ -15,6 +15,8 @@
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   background-color: var(--primary-color);
   border-radius: 5px;
   padding: 20px 0;
@@ -65,6 +67,18 @@ footer {
   background-color: var(--primary-color);
   border-radius: 5px;
 }
+footer p {
+  color: var(--secondary-color);
+}
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+footer a:hover {
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 
 .hero {
   background-image: url(/images/background.jpg);
@@ -72,7 +86,7 @@ footer {
   background-position-y: -50px;
 
   border-radius: 5px;
-  padding: 20px;
+  padding: 80px;
 }
 .btn-customised {
   margin: 50px;
