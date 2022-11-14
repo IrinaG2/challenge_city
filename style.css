@@ -81,7 +81,7 @@ footer a:hover {
 }
 
 .hero {
-  background-image: url(/images/background.jpg);
+  background-image: url(images/background.jpg);
   background-size: 100%;
   background-position-y: -50px;
 
